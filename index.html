@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#10101a">
+<title>DESBAN INSTAGRAM AI</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="brand"><div class="brand-icon">✦</div><div><b>DESBAN</b><span>INSTAGRAM AI</span></div></div>
+    <div class="side-label">PAINEL</div>
+    <a class="nav active" href="#dashboard">◫ <span>Visão geral</span></a>
+    <a class="nav" href="#analysis">⌕ <span>Análise do bloqueio</span></a>
+    <a class="nav" href="#appeal">✎ <span>Assistente de recurso</span></a>
+    <a class="nav" href="#tracking">◷ <span>Acompanhamento</span></a>
+    <div class="sidebar-bottom"><div class="safe-dot"></div><div><b>Modo seguro</b><small>Sem senha · Sem envio automático</small></div></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><div class="mobile-brand">✦ DESBAN <span>INSTAGRAM AI</span></div><div class="top-status"><i></i> Assistente de organização</div></header>
+    <section class="hero" id="dashboard">
+      <div><div class="eyebrow">CENTRAL DE RECUPERAÇÃO</div><h1>Vamos organizar sua<br><em>recuperação.</em></h1>
+      <p>Um espaço para acompanhar os passos oficiais, preparar sua contestação e guardar protocolos e respostas reais.</p></div>
+      <div class="hero-art" aria-hidden="true"><div class="orbit orbit1"></div><div class="orbit orbit2"></div><div class="phone">◎<small>Instagram</small></div><div class="spark">✦</div></div>
+    </section>
+    <section class="account-card">
+      <div class="account-avatar">◎</div><div class="account-info"><small>CONTA EM ACOMPANHAMENTO</small><h2 id="accountName">@d_novais5</h2><p>Desabilitada em <strong id="disabledDateText">14/09/2026</strong></p></div>
+      <div class="status-pill"><span></span><b id="statusText">Desabilitada</b></div>
+    </section>
+    <div class="notice"><span class="notice-icon">i</span><div><b>Importante</b><p>Este assistente não é afiliado à Meta e não consegue consultar o estado interno da conta. Ele não envia recursos nem simula respostas. Use somente os canais oficiais e registre aqui o que realmente acontecer.</p></div></div>
+    <section class="section" id="analysis">
+      <div class="section-heading"><div><div class="eyebrow">PASSO 01</div><h2>Análise do bloqueio</h2><p>Registre exatamente o que apareceu no aplicativo ou no e-mail.</p></div><span class="section-symbol">⌕</span></div>
+      <div class="panel">
+        <label for="reason">Motivo informado pelo Instagram</label>
+        <select id="reason"><option value="">Selecione se souber</option><option>Violação das Diretrizes da Comunidade</option><option>Suspeita de atividade ou acesso incomum</option><option>Identidade ou idade precisa ser confirmada</option><option>Direitos autorais ou propriedade intelectual</option><option>Não foi informado um motivo claro</option><option>Outro motivo / mensagem diferente</option></select>
+        <label for="exactMessage">Mensagem exata recebida (opcional)</label><textarea id="exactMessage" rows="3" placeholder="Copie aqui a mensagem do Instagram, sem incluir senhas ou códigos de segurança."></textarea>
+        <label for="notes">Observações úteis</label><textarea id="notes" rows="2" placeholder="Ex.: quando tentou entrar, se recebeu e-mail, se já contestou..."></textarea>
+        <button class="btn primary" id="saveAnalysis">Salvar análise <span>→</span></button><span class="save-state" id="analysisSaveState"></span>
+      </div>
+      <div class="official-grid">
+        <a class="official-card" href="https://www.instagram.com/hacked/" target="_blank" rel="noopener noreferrer"><div class="official-icon">↗</div><div><b>Recuperação oficial</b><p>Abra a página oficial de ajuda para problemas de acesso e recuperação.</p><span>instagram.com/hacked ↗</span></div></a>
+        <a class="official-card" href="https://help.instagram.com/" target="_blank" rel="noopener noreferrer"><div class="official-icon">↗</div><div><b>Central de Ajuda</b><p>Consulte as orientações e opções exibidas para seu caso.</p><span>help.instagram.com ↗</span></div></a>
+        <a class="official-card" href="https://accountscenter.meta.com/" target="_blank" rel="noopener noreferrer"><div class="official-icon">↗</div><div><b>Central de Contas Meta</b><p>Use quando estiver disponível para sua conta e situação.</p><span>accountscenter.meta.com ↗</span></div></a>
+      </div>
+    </section>
+    <section class="section" id="appeal">
+      <div class="section-heading"><div><div class="eyebrow">PASSO 02</div><h2>Assistente de recurso</h2><p>Prepare um texto claro para revisar e enviar manualmente no canal oficial.</p></div><span class="section-symbol">✎</span></div>
+      <div class="panel">
+        <div class="two-col"><div><label for="fullName">Nome que consta na conta (opcional)</label><input id="fullName" placeholder="Seu nome completo"></div><div><label for="contactEmail">E-mail de contato (opcional)</label><input id="contactEmail" type="email" placeholder="seuemail@exemplo.com"></div></div>
+        <label for="appealContext">Explique brevemente o que aconteceu</label><textarea id="appealContext" rows="3" placeholder="Conte apenas fatos verdadeiros. Se não souber a causa, diga isso claramente."></textarea>
+        <label class="checkline"><input type="checkbox" id="truthCheck"> Confirmo que as informações que forneci são verdadeiras.</label>
+        <button class="btn primary" id="generateAppeal">Gerar rascunho de contestação <span>✦</span></button>
+        <div id="appealResult" class="appeal-result hidden"><div class="result-head"><b>Seu rascunho</b><span>Revise antes de usar</span></div><textarea id="appealText" rows="10"></textarea><div class="button-row"><button class="btn secondary" id="copyAppeal">Copiar texto</button><button class="btn secondary" id="saveAttemptWithAppeal">Registrar como tentativa</button></div><p class="micro">O texto é apenas um modelo. Não confirma que um recurso foi enviado nem garante que a conta será reativada.</p></div>
+      </div>
+      <div class="tip"><span>✦</span><p><b>Como solicitar revisão</b><br>Tente entrar na conta pelo aplicativo oficial e leia as instruções apresentadas na tela. Se aparecer “Solicitar revisão”, “Discordar da decisão” ou uma opção semelhante, siga as instruções exibidas. A disponibilidade varia conforme o caso; não existe garantia de um formulário específico para todas as contas.</p></div>
+    </section>
+    <section class="section" id="tracking">
+      <div class="section-heading"><div><div class="eyebrow">PASSO 03</div><h2>Acompanhamento</h2><p>Marque as etapas concluídas e registre tentativas e respostas reais.</p></div><span class="section-symbol">◷</span></div>
+      <div class="progress-panel"><div class="progress-top"><div><b>Etapas da recuperação</b><small id="progressLabel">0 de 5 concluídas</small></div><strong id="progressPercent">0%</strong></div><div class="progress-track"><div id="progressBar"></div></div><div id="stepsList" class="steps-list"></div></div>
+      <div class="tracking-grid">
+        <div class="panel"><h3>Registrar tentativa</h3><label for="attemptDate">Data</label><input id="attemptDate" type="date"><label for="attemptChannel">Canal utilizado</label><select id="attemptChannel"><option>Aplicativo do Instagram</option><option>Instagram.com/hacked</option><option>Central de Ajuda da Meta</option><option>Central de Contas</option><option>Outro canal oficial</option></select><label for="protocol">Protocolo / confirmação (se houver)</label><input id="protocol" placeholder="Número ou código de confirmação"><label for="attemptResult">Resultado observado</label><textarea id="attemptResult" rows="2" placeholder="Ex.: formulário enviado; nenhuma confirmação; aguardando..."></textarea><button class="btn primary full" id="addAttempt">Salvar tentativa</button></div>
+        <div class="panel"><h3>Registrar resposta da Meta</h3><label for="responseDate">Data da resposta</label><input id="responseDate" type="date"><label for="responseSource">Origem</label><select id="responseSource"><option>E-mail oficial</option><option>Notificação no Instagram</option><option>Tela de login</option><option>Central de Contas</option><option>Outra origem</option></select><label for="responseText">Conteúdo da resposta</label><textarea id="responseText" rows="3" placeholder="Registre somente a resposta que recebeu de verdade."></textarea><label for="nextAction">Próximo passo indicado</label><input id="nextAction" placeholder="Ex.: enviar informação solicitada, se houver"><button class="btn primary full" id="addResponse">Salvar resposta</button></div>
+      </div>
+      <div class="history-grid"><div class="panel"><h3>Histórico de tentativas <span id="attemptCount" class="count">0</span></h3><div id="attemptsList" class="history-list empty">Nenhuma tentativa registrada.</div></div><div class="panel"><h3>Respostas recebidas <span id="responseCount" class="count">0</span></h3><div id="responsesList" class="history-list empty">Nenhuma resposta registrada.</div></div></div>
+    </section>
+    <footer><div class="brand mini"><div class="brand-icon">✦</div><div><b>DESBAN</b><span>INSTAGRAM AI</span></div></div><p>Ferramenta independente de organização. Instagram e Meta são marcas de seus respectivos proprietários.</p><button id="exportData" class="text-button">Exportar meus registros ↓</button></footer>
+  </main>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="/app.js"></script>
+</body></html>
